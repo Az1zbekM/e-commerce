@@ -1,23 +1,23 @@
 @import '../../_css/type.scss';
 
 .button {
-  border: none;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
   background-color: transparent;
   text-decoration: none;
   display: inline-flex;
-  padding: 12px 24px;
+  padding: 10px 24px;
   font-family: inherit;
   line-height: inherit;
   font-size: inherit;
+  border: 10px;
 }
 
 .content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around;    
 
   svg {
     margin-right: calc(var(--base) / 2);

@@ -7,7 +7,6 @@ import Link from 'next/link'
 import classes from './index.module.scss'
 import Image from 'next/image'
 import { HeaderNav } from '../Nav'
-import HeaderMobileNav from '../HeaderMobileNav'
 import { noHeaderFooterUrls } from '../../../constants'
 import { usePathname } from 'next/navigation'
 const HeaderComponent = ({ header}: { header: Header }) => {
@@ -21,7 +20,7 @@ const HeaderComponent = ({ header}: { header: Header }) => {
         </Link>
 
         <HeaderNav header={header} />
-        <HeaderMobileNav header={header}/>
+        {/* <MobileNav header={header}/> */}
     </Gutter>
     </nav>
   )
