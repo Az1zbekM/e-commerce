@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 
 import classes from './index.module.scss';
 
@@ -11,8 +11,11 @@ const Promotion = () => {
     seconds: 0,
   });
 
-  const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 3);
+  const targetDate = useMemo(() => {
+    const date = new Date();
+    date.setDate(date.getDate() + 3);
+    return date;
+  }, []); // Empty dependency array ensures this runs only once during component mount
 
   useEffect(() => {
     const timerInterval = setInterval(() => {
