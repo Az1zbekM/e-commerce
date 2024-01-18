@@ -1,21 +1,21 @@
-import React, { ChangeEvent, useState } from 'react'
+import React, { ChangeEvent, useState } from 'react';
 
-import classes from './index.module.scss'
+import classes from './index.module.scss';
 
 interface CheckboxProps {
-  label: string
-  value: string
-  isSelected: boolean
-  onClickHandler: (value: string) => void
+  label: string;
+  value: string;
+  isSelected: boolean;
+  onClickHandler: (value: string) => void;
 }
 
 export const Checkbox: React.FC<CheckboxProps> = ({ label, value, isSelected, onClickHandler }) => {
-  const [isChecked, setIsChecked] = useState(isSelected)
+  const [isChecked, setIsChecked] = useState(isSelected);
 
   const handleCheckboxChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setIsChecked(e.target.checked)
-    onClickHandler(value)
-  }
+    setIsChecked(e.target.checked);
+    onClickHandler(value);
+  };
 
   return (
     <label className={classes.checkboxWrapper}>
@@ -27,5 +27,5 @@ export const Checkbox: React.FC<CheckboxProps> = ({ label, value, isSelected, on
       />
       {label}
     </label>
-  )
-}
+  );
+};

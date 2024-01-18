@@ -1,13 +1,13 @@
-import React from 'react'
-import { Metadata } from 'next'
+import React from 'react';
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
-import { RecoverPasswordForm } from './RecoverPasswordForm'
+import { RenderParams } from '../../_components/RenderParams';
+import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph';
+import { RecoverPasswordForm } from './RecoverPasswordForm';
 
-import classes from './index.module.scss'
-import Link from 'next/link'
-import Image from 'next/image'
-import { RenderParams } from '../../_components/RenderParams'
+import classes from './index.module.scss';
 
 export default async function RecoverPassword() {
   return (
@@ -28,9 +28,9 @@ export default async function RecoverPassword() {
         <div className={classes.formContainer}>
           <RenderParams className={classes.params} />
           <Link href="/login" className={classes.backLink}>
-           <Image src="/assets/icons/arrow-left.svg" alt="arrow-left" width={20} height={20} /> 
-           <p>Back</p>
-            </Link>
+            <Image src="/assets/icons/arrow-left.svg" alt="arrow-left" width={20} height={20} />
+            <p>Back</p>
+          </Link>
           <div className={classes.formTitle}>
             <h3>Forgot Password </h3>
           </div>
@@ -38,7 +38,7 @@ export default async function RecoverPassword() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export const metadata: Metadata = {
@@ -48,4 +48,4 @@ export const metadata: Metadata = {
     title: 'Recover Password',
     url: '/recover-password',
   }),
-}
+};

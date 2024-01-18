@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-import classes from './index.module.scss'
+import classes from './index.module.scss';
 
 interface RadioButtonProps {
-  label: string
-  value: string
-  isSelected: boolean
-  onRadioChange: (value: string) => void
-  groupName: string
+  label: string;
+  value: string;
+  isSelected: boolean;
+  onRadioChange: (value: string) => void;
+  groupName: string;
 }
 
 export const RadioButton: React.FC<RadioButtonProps> = ({
@@ -18,8 +18,8 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
   groupName,
 }) => {
   const handleRadioChange = () => {
-    onRadioChange(value)
-  }
+    onRadioChange(value);
+  };
 
   return (
     <label className={classes.radioWrapper}>
@@ -32,5 +32,5 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
       />
       {label}
     </label>
-  )
-}
+  );
+};
