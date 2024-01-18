@@ -1,8 +1,8 @@
 .adminBar {
   z-index: 10;
   width: 100%;
-  padding: 5px 0;
-  font-size: calc(#{var(--html-font-size)} * 1px);
+  padding: 10px 0;
+  font-size: 16px !important;
   display: block;
   visibility: hidden;
   opacity: 0;
@@ -29,25 +29,24 @@
   & > *:not(:last-child) {
     margin-right: 10px !important;
   }
+  font-size: 16px !important;
 }
 
 .user {
   margin-right: 10px !important;
+  font-size: 16px;
+  visibility: hidden;
 }
 
 .logo {
   margin-right: 10px !important;
+  font-size: 16px !important;
+  font-weight: 900;
 }
 
 .blockContainer {
   position: relative;
+  font-size: 16px !important;
 }
 
-.hr {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--light-gray);
-  height: 2px;
-}
+

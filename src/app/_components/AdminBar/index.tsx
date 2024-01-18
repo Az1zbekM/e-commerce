@@ -32,6 +32,7 @@ export const AdminBar: React.FC<{
   if (!isAdmin) return null
 
   return (
+    <>
     <div className={[classes.adminBar, show && classes.show].filter(Boolean).join(' ')}>
       <Gutter className={classes.blockContainer}>
         <PayloadAdminBar
@@ -48,6 +49,7 @@ export const AdminBar: React.FC<{
             user: classes.user,
             logo: classes.logo,
             controls: classes.controls,
+            
           }}
           logo={<Title />}
           style={{
@@ -55,9 +57,12 @@ export const AdminBar: React.FC<{
             zIndex: 'unset',
             padding: 0,
             backgroundColor: 'transparent',
+            fontSize: '16px',
+            gap: '11px',
           }}
-        />
+        /> 
       </Gutter>
     </div>
+    </>
   )
 }
