@@ -5,5 +5,6 @@ module.exports = {
   plugins: ['prettier', 'simple-import-sort'], // Add 'simple-import-sort' to the plugins array
   rules: {
     'simple-import-sort/imports': 'error', // Add the rule for sorting imports
+    '@typescript-eslint/no-unused-vars': 'off',
   },
 };
