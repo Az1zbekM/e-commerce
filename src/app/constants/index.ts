@@ -19,7 +19,7 @@ export const inclusions = [
     description: 'Pay with multiple credit cards',
     icon: '/assets/icons/payment.svg',
   },
-]
+];
 
 export const profileNavItems = [
   {
@@ -42,6 +42,6 @@ export const profileNavItems = [
     url: '/logout',
     icon: '/assets/icons/logout.svg',
   },
-]
+];
 
-export const noHeaderFooterUrls = ['/create-account', '/login', '/recover-password']
+export const noHeaderFooterUrls = ['/create-account', '/login', '/recover-password'];
