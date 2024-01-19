@@ -13,7 +13,7 @@ import './_css/app.scss';
 const jost = Jost({ subsets: ['latin'], variable: '--font-jost', weight: ['400', '700'] });
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
         <InitTheme />
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
