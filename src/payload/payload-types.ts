@@ -133,7 +133,7 @@ export interface Page {
         limit?: number | null;
         selectedDocs?:
           | {
-              relationTo: string;
+              relationTo: 'products';
               value: string | Product;
             }[]
           | null;
