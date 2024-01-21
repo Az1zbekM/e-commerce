@@ -7,10 +7,12 @@ import { ArchiveBlockProps } from './types';
 
 import classes from './index.module.scss';
 
+interface ArchiveBlockExtendedProps {
+  id?: string;
+}
+
 export const ArchiveBlock: React.FC<
-  ArchiveBlockProps & {
-    id?: string;
-  }
+  ArchiveBlockProps &   ArchiveBlockExtendedProps
 > = props => {
   const {
     introContent,
@@ -20,7 +22,6 @@ export const ArchiveBlock: React.FC<
     limit,
     populatedDocs,
     populatedDocsTotal,
-    selectedDocs,
     categories,
   } = props;
 
@@ -36,7 +37,6 @@ export const ArchiveBlock: React.FC<
         relationTo={relationTo}
         populatedDocs={populatedDocs}
         populatedDocsTotal={populatedDocsTotal}
-        selectedDocs={selectedDocs}
         categories={categories}
         limit={limit}
         sort="-publishedOn"
