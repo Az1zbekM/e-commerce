@@ -3,9 +3,6 @@ const ContentSecurityPolicy = require('./csp')
 const redirects = require('./redirects')
 
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   reactStrictMode: true,
   swcMinify: true,
   images: {
@@ -14,7 +11,7 @@ const nextConfig = {
       .map(url => url.replace(/https?:\/\//, '')),
   },
   redirects,
-  async headers() {
+  async headers() { 
     const headers = []
 
     // Prevent search engines from indexing the site if it is not live

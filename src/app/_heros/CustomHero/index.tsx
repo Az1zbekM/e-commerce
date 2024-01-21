@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 
 import { Page } from '../../../payload/payload-types';
 import { CMSLink } from '../../_components/Link';
-import { Media } from '../../_components/Media';
 import RichText from '../../_components/RichText';
 
 import classes from './index.module.scss';
